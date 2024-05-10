@@ -11,6 +11,7 @@ const produtosData = [
     nome: 'Páscoa',
     imagem: capa1,
     link: "/nova1"
+    
   },
   {
     id: 2,

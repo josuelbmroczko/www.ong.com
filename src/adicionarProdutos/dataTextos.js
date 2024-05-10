@@ -8,10 +8,10 @@ import qrcode from '../imagem/qrcode-pix.png'
 export const data = {
 
     textoBanner:{
-        titulo:'Brilhando Juntos: Abrace a Esperança',
-        texto:'Uma ONG dedicada a transformar vidas de crianças carentes',
-        titulo2: 'Cada ação no PRESENTE molda o FUTURO.',
-        texto2: 'Cada passo que damos hoje pode pavimentar o caminho para um amanhã melhor. Da mesma forma, cada apoio que oferecemos às crianças e jovens é uma semente para um futuro promissor.',
+        titulo:'Juntos, somos capazes de criar um oceano de ideia incríveis. ',
+        texto:'Vamos navegar por novas abordagens e vencer',
+        titulo2: 'Transformando vidas, criando futuro',
+        texto2: 'juntos, fazemos a diferença.',
         
     },
 

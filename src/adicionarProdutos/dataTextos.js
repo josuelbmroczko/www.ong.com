@@ -10,8 +10,8 @@ export const data = {
     textoBanner:{
         titulo:'Juntos, somos capazes de criar um oceano de ideia incríveis. ',
         texto:'Vamos navegar por novas abordagens e vencer',
-        titulo2: 'Transformando vidas, criando futuro',
-        texto2: 'juntos, fazemos a diferença.',
+        titulo2: 'Transformando vidas, criando futuro: juntos, fazemos a diferença.',
+        texto2: 'confiamos no tempo de Deus para impactar vidas e mudar destinos.',
         
     },
 

@@ -13,18 +13,19 @@ export default function SobreConteudo() {
     <StyledDiv>
      
       <h1>SOBRE</h1>
-      <p>Somos uma organização sem fins lucrativos que atua na proteção integral de crianças e adolescentes em conjunto com a família e o Estado. Promovemos o desenvolvimento de suas potencialidades, a partir de ações socioeducativas, fortalecendo os vínculos familiares e sociais.</p>
-      <h2>Missão</h2>
-      <p>Acolher e promover o desenvolvimento de crianças e adolescentes em situação de vulnerabilidade, formando cidadãos conscientes de seus direitos e deveres.</p>
-      <h2>Visão</h2>
-      <p>Ser referência nos serviços de acolhimento e de prevenção para crianças e adolescentes em situação de risco e vulnerabilidade na cidade de São Paulo.</p>
-      <h2>Valores</h2>
+      <p><mark>Missão:</mark></p>
+      <p>Nosso objetivo é capacitar e transformar vidas, proporcionando educação, nutrição e cuidados médicos a crianças carentes. Trabalhamos incansavelmente para criar um ambiente seguro, estimulante e amoroso, onde cada criança possa alcançar seu pleno potencial.</p>
+      
+      <p><mark>Visão:</mark></p>
+      <p>Visualizamos um futuro onde todas as crianças, independentemente de sua origem ou circunstâncias, tenham acesso igualitário a oportunidades educacionais, cuidados de saúde e nutrição adequada. Queremos ser agentes de mudança positiva, capacitando as crianças para se tornarem líderes e construtores de suas comunidades.</p>
+      
+      <h2><mark>Valores</mark></h2>
       <ul>
-        <li>Compromisso com a criança e o adolescente</li>
-        <li>Respeito à individualidade e diversidade</li>
-        <li>Ambiente acolhedor</li>
-        <li>Excelência nas práticas de gestão</li>
-        <li>Relações éticas, neutralidade e transparência</li>
+        <li> <mark>1.Compromisso com a igualdade:</mark>  Acreditamos na igualdade de oportunidades para todas as crianças, independentemente de sua raça, gênero, religião ou situação econômica.</li>
+        <li><mark>Respeito e dignidade:</mark> Valorizamos cada criança como um indivíduo único, respeitando suas histórias, culturas e identidades.</li>
+        <li><mark>Transparência e responsabilidade:</mark> Mantemos altos padrões de transparência em todas as nossas operações e somos responsáveis perante nossos beneficiários, doadores e parceiros.</li>
+        <li><mark>Empoderamento:</mark> Capacitamos as crianças a serem agentes de mudança em suas próprias vidas e comunidades, fornecendo-lhes educação, habilidades e apoio emocional.</li>
+        <li><mark>Colaboração:</mark> Reconhecemos a importância da colaboração e parceria com outras organizações, comunidades e órgãos governamentais para alcançar nosso objetivo comum de melhorar as vidas das crianças carentes.</li>
       </ul>
      
     </StyledDiv>

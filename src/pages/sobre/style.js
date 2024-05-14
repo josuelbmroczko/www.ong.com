@@ -5,9 +5,9 @@ export const StyledDiv = styled.div`
   font-size: 18px;
  
 background-color: white;
-padding: 20px;
+padding: 100px;
 padding-top: 100px;
-padding-bottom: 100px;
+padding-bottom: 120px;
   &::-webkit-scrollbar {
     width: 8px;
   }
@@ -26,7 +26,11 @@ padding-bottom: 100px;
     color: #333;
     margin-bottom: 20px;
   }
-
+  mark{
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+  }
   h2 {
     color: #555;
     margin-top: 30px;

@@ -12,6 +12,7 @@ import Blog4 from './componentes/blog/blog4/blog4.jsx';
 import DoacaoQrCode from './componentes/botaoDoeQrCode/doe.jsx';
 import SobreConteudo from './pages/sobre/sobreConteudo.jsx';
 import ContatoConteudo from './pages/contatos/contatoConteudo.jsx';
+import Projetos from './componentes/projtos/projetos.jsx';
 
  
     
@@ -41,6 +42,7 @@ function App() {
           <Route path="/nova2" element={<Blog2 />} />
           <Route path="/nova3" element={<Blog3 />} />
           <Route path="/nova4" element={<Blog4 />} />
+          <Route path='/projetos' element={<Projetos/>}/>
            
          </Routes> 
       </Router>

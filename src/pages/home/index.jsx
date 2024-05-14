@@ -14,6 +14,7 @@ import Servicos from '../../componentes/servicos/servicos.jsx';
 import Valores from '../../componentes/valores/valores.jsx';
 import Whatsapp from '../../componentes/whatsapp/whatsapp.jsx';
 import ContatoEMapa from './../../adicionarProdutos/contatoemapa/contatoemapa';
+import NossosParceiros from '../../componentes/nossosparceiros/nossosParceiros.jsx';
 
 function Homeeapp() {
   
@@ -34,6 +35,7 @@ function Homeeapp() {
       <Produtos produtosData={produtosData} />
       <Whatsapp/>
       <ContatoEMapa/>
+      <NossosParceiros/>
       <Footer />
       
     </div>

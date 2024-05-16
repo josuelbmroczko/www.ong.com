@@ -14,6 +14,7 @@ import { Container } from '../styles';
 import Home from '../../home';
 import Footer from '../../footer/footer';
 
+
 const CarouselContainer = styled.div`
   display: flex;
   overflow-x: auto;
@@ -64,6 +65,10 @@ const Button = styled.button`
 `;
 
 export default function Blog1() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+  
   const [images, setImages] = useState([]);
   const containerRef = useRef(null);
 

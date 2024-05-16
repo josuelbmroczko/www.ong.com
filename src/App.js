@@ -22,9 +22,9 @@ function App() {
   return (
     <ImageProvider>
             <Helmet>
-          <meta name="description" content='bit sorcerers team' />
-          <meta name="description" content='Sites para advogados' />
-          <meta name="description" content='System Loquaz' />
+          <meta name="description" content='ong' />
+          <meta name="description" content='ong ' />
+          <meta name="description" content='ong ' />
 
           </Helmet>
       <Router>

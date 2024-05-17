@@ -90,7 +90,7 @@ const NextButton = styled(Button)`
 export default function Blog1() {
   const images = [
     imagem1, imagem2, imagem3, imagem4, imagem5, imagem6, imagem7, imagem8, imagem9,
-    imagem10, imagem11, imagem12, imagem13, imagem14, imagem15, imagem16, imagem17, imagem18, imagem19,
+    imagem10, imagem11, imagem12, imagem13, imagem14, imagem15, imagem16, imagem17,  imagem19,
     imagem21, imagem22, imagem23, imagem24, imagem25, imagem26,
   ];
   const containerRef = useRef(null);

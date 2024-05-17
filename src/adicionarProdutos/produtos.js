@@ -6,7 +6,7 @@ import capa2 from '../imagem/blog2.png'
 const produtosData = [
   {
     id: 1,
-    nome: ' blog',
+    nome: 'Páscoa',
     imagem: capa1,
     link: "/nova1"
     

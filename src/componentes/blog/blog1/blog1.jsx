@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
 import imagem1 from '../imagensBlog/imagem1.png';
 import imagem2 from '../imagensBlog/imagem2.png';
@@ -20,16 +20,13 @@ import imagem16 from '../imagensBlog/imagem16.png';
 import imagem17 from '../imagensBlog/imagem17.png';
 import imagem18 from '../imagensBlog/imagem18.png';
 import imagem19 from '../imagensBlog/imagem19.png';
- 
+
 import imagem21 from '../imagensBlog/imagem21.png';
 import imagem22 from '../imagensBlog/imagem22.png';
 import imagem23 from '../imagensBlog/imagem23.png';
 import imagem24 from '../imagensBlog/imagem24.png';
 import imagem25 from '../imagensBlog/imagem25.png';
 import imagem26 from '../imagensBlog/imagem26.png';
- 
-
- 
 
 import { Container } from '../styles';
 import Home from '../../home';
@@ -91,7 +88,11 @@ const NextButton = styled(Button)`
 `;
 
 export default function Blog1() {
-  const images = [imagem1, imagem2, imagem3, imagem4, imagem5, imagem6, imagem7, imagem8, imagem9,imagem10,imagem11,imagem12,imagem13,imagem14,imagem15,imagem16,imagem17,imagem18,imagem19,imagem21,imagem22,imagem23,imagem24,imagem25,imagem26,];
+  const images = [
+    imagem1, imagem2, imagem3, imagem4, imagem5, imagem6, imagem7, imagem8, imagem9,
+    imagem10, imagem11, imagem12, imagem13, imagem14, imagem15, imagem16, imagem17, imagem18, imagem19,
+    imagem21, imagem22, imagem23, imagem24, imagem25, imagem26,
+  ];
   const containerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
   const scrollAmount = 300; // Ajuste este valor conforme necessário
@@ -115,6 +116,10 @@ export default function Blog1() {
       });
     }
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>

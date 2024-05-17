@@ -22,7 +22,7 @@ export const FooterContainer = styled.footer`
     flex-direction: column;
     margin: 0;
     padding: 0;
-    background-color: rgba(10,100,100,0.5);
+    background-color: rgba(0,122,254,0.5);
     height: 250px;
     max-width: 545px;
     width: 100%;

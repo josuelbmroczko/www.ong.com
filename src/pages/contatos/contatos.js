@@ -4,8 +4,8 @@ export const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
-
+  padding-top: 140px;
+padding-bottom: 100px;
   .form-container {
     display: flex;
     flex-direction: column;

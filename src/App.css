@@ -1,10 +1,10 @@
 body, html {
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, #ffcc99, #ffffcc, #99ff99, #cc99ff, #99ccff, #ff99cc);
+ /* background: linear-gradient(45deg, #ffcc99, #ffffcc, #99ff99, #cc99ff, #99ccff, #ff99cc);
   background-size: 300%;
-  animation: changeColor 10s linear infinite alternate;
- 
+  animation: changeColor 10s linear infinite alternate;*/
+  background-color: #B6E2F7;
   
   
 }

@@ -19,7 +19,7 @@ export const ValoresStyle = styled.div`
     text-align: center;
     flex: 1;
     padding: 10px;
-    background-color: rgba(10, 10, 100, 0.2);
+    background-color: #2D2E7C;
     border: 1px solid #105000;
     margin: 5px;
     display: flex;

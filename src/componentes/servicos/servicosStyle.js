@@ -47,7 +47,7 @@ export const ServicosStyle = styled.div`
     cursor: pointer;
     margin-bottom: 20px;
     color: #ddd;
-    background-color: rgba(10, 100, 100, 0.8);
+    background-color: #2D2E7C;
     position: relative;
 
   }
@@ -63,7 +63,7 @@ export const ServicosStyle = styled.div`
     padding:   10px;
     border-radius: 100px 0 0 0px;
     border: none;
-    background-color: turquoise;
+    background-color:#007AFE ;
     color: #fff;
     cursor: pointer;
     position: absolute;
@@ -71,8 +71,8 @@ export const ServicosStyle = styled.div`
     
   }
   button:hover{
-    background-color: aqua;
-    color: blue;
+    background-color: blue;
+   
   }
 
 

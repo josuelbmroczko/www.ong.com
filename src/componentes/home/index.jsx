@@ -1,34 +1,107 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import StyleDiv from './style';
- 
 import { Link } from 'react-router-dom';
 import { useImages } from '../../imagemProvider/imagemProvider';
-import logo from '../../imagem/logo.png'
+import logo from '../../imagem/logo.png';
+
 export default function Home() {
   const { imagemCart, imagemLupaPesquisa } = useImages();
+  const [isModalOpen, setModalOpen] = useState(false);
+  const modalRef = useRef(null);
+
+  const toggleModal = () => {
+    setModalOpen(!isModalOpen);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
+
+  useEffect(() => {
+    const eventType = isTouchDevice() ? 'touchend' : 'mousedown';
+
+    if (isModalOpen) {
+      document.addEventListener(eventType, handleOutsideClick);
+    } else {
+      document.removeEventListener(eventType, handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener(eventType, handleOutsideClick);
+    };
+  }, [isModalOpen]);
+
+  const isTouchDevice = () => {
+    return 'ontouchstart' in window || navigator.maxTouchPoints;
+  };
+
+  const handleOutsideClick = (event) => {
+    if (!modalRef.current || !modalRef.current.contains(event.target)) {
+      setModalOpen(false);
+    }
+  };
 
   return (
     <StyleDiv>
       <div className="home-container">
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo" />
+          <button className="menu-button" onClick={toggleModal}>
+          ☰
+          </button>
+        </div>
         <ul className="nav-list">
-          <React.Fragment>
-      
- 
-
-            <li className="menu-options">
-            <img src={logo} alt="" />
-              {/*  <Link to='/' className='logoTexto'>System Loquaz</Link>*/}
-              <Link to="/">Home</Link>
-              <Link to="/contato">Contato</Link>
-              <Link to="/projetos">Projetos</Link>
-              <Link to="/doe">Doe</Link>
-              <Link to="/sobre">Sobre</Link>
-
-
-              
-            </li>
-          </React.Fragment>
+          <li>
+            <Link to="/" onClick={handleCloseModal}>Home</Link>
+          </li>
+          <li>
+            <Link to="/contato" onClick={handleCloseModal}>Contato</Link>
+          </li>
+          <li>
+            <Link to="/projetos" onClick={handleCloseModal}>Projetos</Link>
+          </li>
+          <li>
+            <Link to="/doe" onClick={handleCloseModal}>Doe</Link>
+          </li>
+          <li>
+            <Link to="/sobre" onClick={handleCloseModal}>Sobre</Link>
+          </li>
         </ul>
+        {isModalOpen && (
+          <div
+            className="modal"
+            ref={modalRef}
+            role="button"
+            tabIndex={0}
+            onClick={handleCloseModal}
+            onKeyDown={(event) => {
+              if (event.key === 'Enter' || event.key === ' ') {
+                handleCloseModal();
+              }
+            }}
+          >
+            <button className="close-button" onClick={handleCloseModal}>
+              Fechar
+            </button>
+            <ul className="modal-nav-list">
+              <li>
+                <Link to="/" onClick={handleCloseModal}>Home</Link>
+              </li>
+              <li>
+                <Link to="/contato" onClick={handleCloseModal}>Contato</Link>
+              </li>
+              <li>
+                <Link to="/projetos" onClick={handleCloseModal}>Projetos</Link>
+              </li>
+              <li>
+                <Link to="/doe" onClick={handleCloseModal}>Doe</Link>
+              </li>
+              <li>
+                <Link to="/sobre" onClick={handleCloseModal}>Sobre</Link>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
     </StyleDiv>
   );

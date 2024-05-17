@@ -9,7 +9,7 @@ flex-direction: column;
  
 text-align: center;
 h1{
-   background-color: antiquewhite;
+   background-color:#007AFE;
    font-size: 2rem;
 }
 ul{

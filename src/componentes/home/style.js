@@ -7,125 +7,134 @@ const StyleDiv = styled.div`
   background-color: ${Cores.brancoTransparente};
   width: 100%;
   left: 0px;
- top: 0;
- 
+  top: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   
-   .home-container {
+  .home-container {
     width: 100%;
+    height: 120px;
   }
 
-  .nav-list {
+  .logo-container {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    list-style: none;
+    justify-content: space-between; /* Alteração aqui */
     align-items: center;
-  }
-
-  li {
-    display: flex;
+    padding: 0 20px; /* Espaçamento interno para separar a logo do canto */
   }
 
   .logo {
-    width: 80px;
+    width: 120px;
   }
 
-  .cart {
-    width: 15px;
-  }
-
-  a {
-    text-decoration: none;
-    color: ${Cores.preto};
-  }
-
-  button {
-    background-color: transparent;
+  .menu-button {
+    position: relative;
+    display: none;
+    background-color: #007AFE;
+    color: ${Cores.branco};
+    padding: 10px;
+    margin-right: 50px;
     border: none;
+    cursor: pointer;
+    font-size: 16px;
   }
 
-  .lupaPesquisa {
-    width: 18px;
-  }
-.logoTexto{
-  color:#005011;
-  font-size: 30px;
-  font-weight: bold;
- }
-  .menu-options {
+  .nav-list {
+    position: relative;
     display: flex;
-    justify-content: space-evenly;
+    left: 120px;
     list-style: none;
     align-items: center;
-    width: 100%;
-    height: 60px;
-    
+    width: 80%;
+    bottom: 70px;
   }
-  .menu-options img{
-    max-width: 90px;
+
+  .nav-list li {
+    display: flex;
+    width: 100%;
+    margin: 5px;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: ${Cores.preto};
+    background-color: #007AFE;
+    text-align: center;
+    padding: 5px;
     width: 100%;
   }
 
-  #pesquisa {
-    background-color: ${Cores.cinzaClaro};
-    border: 1px solid;
-    border-radius: 3px 9px;
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(200, 200, 200, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
   }
 
-  .logoMobile {
-    display: none;
+  .modal-nav-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .close-button {
+    position: absolute;
+    left: 350px;
+    top: 30px;
+    color: white;
+    background-color: #007AFE;
+  }
+
+  .modal-nav-list li {
+    margin: 10px 0;
+  }
+
+  .modal-nav-list a {
+    text-decoration: none;
+    color: ${Cores.branco};
+    background-color: #007AFE;
+    padding: 10px;
+    width: 200px;
+    padding-bottom: 2px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .modal-nav-list a:hover {
+    background-color: blue;
   }
 
   @media screen and (max-width: 600px) {
-    top: -15px;
     .nav-list {
-      position: fixed;
-      justify-content: space-around;
-      background-color: ${Cores.brancoTransparente};
-      padding-left: 30px;
-
-       
-      width: 100%;
-      left: -30px;
-      flex-direction: column-reverse;
-      align-items: center;
-    }
-
-    .logo {
       display: none;
     }
 
-    .logoMobile {
+    .menu-button {
       display: block;
-      position: relative;
-      left: 10px;
-      width: 100%;
-      max-width: 70px;
-      top: -30px;
-    }
-li{
-  padding-top: 20px;
- 
-}
-    a {
-      height: 20px;
-    }
-    .menu-options{
-      position: relative;
-      top: -5px;
-      
-    }
-    .logoTexto{
-      font-size: 12px;
-      width: 50px;
-    }
-    .menu-options img{
-      width: 60px;
     }
   }
 
+  @media screen and (min-width: 601px) {
+    .modal {
+      display: none;
+    }
+
+    .menu-button {
+      display: none;
+    }
+
+    .logo-container {
+      justify-content: flex-start; /* Ajuste para alinhar a logo no canto esquerdo */
+    }
+  }
 `;
 
 export default StyleDiv;

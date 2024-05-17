@@ -5,14 +5,14 @@ export const EstiloQrCode = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px; /* Espaço entre o conteúdo e o rodapé */
+  margin-bottom: 50px;
+  background-color: #B6E2F7;
  
-
   .containerBanner {
     position: relative;
     overflow: hidden;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
   }
 
   .containerBanner img {

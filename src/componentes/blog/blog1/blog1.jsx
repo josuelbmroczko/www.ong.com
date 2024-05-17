@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import styled from 'styled-components';
 import imagem1 from '../imagensBlog/imagem1.png';
 import imagem2 from '../imagensBlog/imagem2.png';
@@ -14,43 +14,32 @@ import { Container } from '../styles';
 import Home from '../../home';
 import Footer from '../../footer/footer';
 
+const BlogContainer = styled(Container)`
+  position: relative;
+`;
 
 const CarouselContainer = styled.div`
-  display: flex;
+  width: 90%;
   overflow-x: auto;
+  display: flex;
   scroll-snap-type: x mandatory;
-  width: 80%;
-  margin: auto;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  margin: 100px;
+ 
   &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    width: 100%; /* Largura do scrollbar */
+    height: 3px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cor do scrollbar */
   }
 `;
 
-const ImageWrapper = styled.div`
-  display: flex;
-  justify-content: center; /* centralizar horizontalmente */
-  scroll-snap-type: x mandatory;
-`;
-
 const Image = styled.img`
-  flex: 0 0 auto;
-   width: 300px;
+  width: 300px;
   height: 300px;
-  
-  margin: 10px;
   object-fit: cover;
-`;
-
-const ButtonContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 60%;
-  transform: translateY(-50%);
-  width:78%;
-  padding: 0 10px;
+  scroll-snap-align: start;
+  margin-right: 10px;
 `;
 
 const Button = styled.button`
@@ -64,56 +53,61 @@ const Button = styled.button`
   }
 `;
 
+const PrevButton = styled(Button)`
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+`;
+
+const NextButton = styled(Button)`
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+`;
+
 export default function Blog1() {
-  useEffect(()=>{
-    window.scrollTo(0,0);
-  },[])
-  
-  const [images, setImages] = useState([]);
+  const images = [imagem1, imagem2, imagem3, imagem4, imagem5, imagem6, imagem7, imagem8, imagem9, imagem10];
   const containerRef = useRef(null);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      if (width <= 600) {
-        setImages([imagem1, imagem2, imagem3, imagem4, imagem5, imagem6, imagem7, imagem8, imagem9, imagem10]);
-      } else {
-        setImages([imagem1, imagem2, imagem3, imagem4, imagem5, imagem6, imagem7, imagem8, imagem9, imagem10]);
-      }
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const scrollAmount = 300; // Ajuste este valor conforme necessário
 
   const handleNext = () => {
-    containerRef.current.scrollLeft += containerRef.current.offsetWidth;
+    if (currentIndex < images.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+      containerRef.current.scrollTo({
+        left: containerRef.current.scrollLeft + scrollAmount,
+        behavior: 'smooth',
+      });
+    }
   };
 
   const handlePrev = () => {
-    containerRef.current.scrollLeft -= containerRef.current.offsetWidth;
+    if (currentIndex > 0) {
+      setCurrentIndex(currentIndex - 1);
+      containerRef.current.scrollTo({
+        left: containerRef.current.scrollLeft - scrollAmount,
+        behavior: 'smooth',
+      });
+    }
   };
 
   return (
     <>
-   <Home/>
-    <Container>
-      <h2>Blog Ong</h2>
-      <p>Um pedacinho da gente para voces !</p>
-      <CarouselContainer ref={containerRef}>
-        <ButtonContainer>
-          <Button onClick={handlePrev}>⬅</Button>
-          <Button onClick={handleNext}>⮕</Button>
-        </ButtonContainer>
-        <ImageWrapper>
+      <Home />
+      <BlogContainer>
+        <h2>Blog Ong</h2>
+        <p>Um pedacinho da gente para vocês!</p>
+        <CarouselContainer ref={containerRef}>
           {images.map((src, i) => (
             <Image key={i} src={src} alt={`imagem${i + 1}`} />
           ))}
-        </ImageWrapper>
-      </CarouselContainer>
-    </Container> 
-    <Footer/>
+        </CarouselContainer>
+        <PrevButton onClick={handlePrev}>🠔</PrevButton>
+        <NextButton onClick={handleNext}>⟶</NextButton>
+      </BlogContainer>
+      <Footer />
     </>
   );
 }

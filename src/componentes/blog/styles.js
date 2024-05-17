@@ -7,6 +7,7 @@ align-items: center;
 text-align: center;
 padding-top: 100px;
 padding-bottom: 100px;
+ 
 .carousel-container {
   width: 100%;
   max-width: 800px;
@@ -16,7 +17,7 @@ padding-bottom: 100px;
 
 .carousel {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 1.5s ease;
 }
 
 .carousel img {

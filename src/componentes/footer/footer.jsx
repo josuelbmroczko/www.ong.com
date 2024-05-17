@@ -39,7 +39,7 @@ const Footer = () => {
             <h3>Redes Sociais 🌐</h3>
           </li>
           <li>
-            <a href="https://www.instagram.com/projetogeracaoresgate/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/geracaoresgate.ong/" target="_blank" rel="noopener noreferrer">
               <p>Instagram</p>
             </a>
           </li>

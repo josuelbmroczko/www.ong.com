@@ -55,15 +55,17 @@ const Button = styled.button`
 
 const PrevButton = styled(Button)`
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 0;
+  height: 200px;
   transform: translateY(-50%);
 `;
 
 const NextButton = styled(Button)`
   position: absolute;
-  top: 50%;
-  right: 0;
+  top: 60%;
+  right:  0px;
+  height: 200px;
   transform: translateY(-50%);
 `;
 

@@ -58,6 +58,13 @@ const Image = styled.img`
   object-fit: cover;
   scroll-snap-align: start;
   margin-right: 10px;
+  &:hover {
+    width: 400px;
+    height: 400px;
+  }
+  
+  
+  
 `;
 
 const Button = styled.button`

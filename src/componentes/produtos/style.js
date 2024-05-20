@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import produtosData from './../../adicionarProdutos/produtos';
 
 export const StyleProdutos = styled.div`
   ul {
@@ -35,7 +36,13 @@ export const StyleProdutos = styled.div`
     margin: 10px 0;
   }
 
-  span {
+  .produto-info span {
+    position: relative;
+    display: flex;
+    left: 20%;
+    transform: translate(-10%);
+     text-align: center;
+    width: 200px;
     display: block;
     font-weight: bold;
   }

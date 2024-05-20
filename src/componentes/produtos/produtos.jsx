@@ -2,15 +2,8 @@ import React from 'react';
 import { StyleProdutos } from './style';
 import { Link } from 'react-router-dom';
 
-// Função para formatar o preço (exemplo simples)
-function formatarPreco(preco) {
-  if (preco !== undefined) {
-    // Adicione aqui a formatação desejada, por exemplo, adicionar símbolo de moeda, casas decimais, etc.
-    return `R$ ${preco.toFixed(2)}`;
-  } else {
-    return 'Preço não disponível';
-  }
-}
+ 
+ 
 
 export default function Produtos({produtosData}){
   return (
@@ -25,8 +18,8 @@ export default function Produtos({produtosData}){
                   alt={`Imagem ${index}`}
                   className="imagem-produto"
                 />
-                <p>{produto.nome}</p>
-              {/* <span>{`Mensalidade apartir de: ${formatarPreco(produto.preco)}`}</span>   */} 
+                <h3>{produto.nome}</h3>
+              <span> {produto.texto}</span>  
               </div>
             </Link>
           </li>

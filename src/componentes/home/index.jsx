@@ -45,7 +45,7 @@ export default function Home() {
     <StyleDiv>
       <div className="home-container">
         <div className="logo-container">
-          <img src={logo} alt="Logo" className="logo" />
+          <Link to='/'><img src={logo} alt="Logo" className="logo" /></Link>
           <button className="menu-button" onClick={toggleModal}>
           ☰
           </button>

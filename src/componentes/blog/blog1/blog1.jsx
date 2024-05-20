@@ -28,71 +28,10 @@ import imagem24 from '../imagensBlog/imagem24.png';
 import imagem25 from '../imagensBlog/imagem25.png';
 import imagem26 from '../imagensBlog/imagem26.png';
 
-import { Container } from '../styles';
+import { BlogContainer, CarouselContainer, Container, Image, NextButton, PrevButton } from '../styles';
 import Home from '../../home';
 import Footer from '../../footer/footer';
 
-const BlogContainer = styled(Container)`
-  position: relative;
-`;
-
-const CarouselContainer = styled.div`
-  width: 90%;
-  overflow-x: auto;
-  display: flex;
-  scroll-snap-type: x mandatory;
-  margin: 100px;
- 
-  &::-webkit-scrollbar {
-    width: 100%; /* Largura do scrollbar */
-    height: 8px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #4a56c0; /* Cor do scrollbar */
-  }
-`;
-
-const Image = styled.img`
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  scroll-snap-align: start;
-  margin-right: 10px;
-  &:hover {
-    width: 400px;
-    height: 400px;
-  }
-  
-  
-  
-`;
-
-const Button = styled.button`
-  background-color: rgba(17, 17, 17, 0.616);
-  border: none;
-  padding: 10px;
-  color: aliceblue;
-  cursor: pointer;
-  &:hover {
-    background-color: #0a2375;
-  }
-`;
-
-const PrevButton = styled(Button)`
-  position: absolute;
-  top: 60%;
-  left: 0;
-  height: 200px;
-  transform: translateY(-50%);
-`;
-
-const NextButton = styled(Button)`
-  position: absolute;
-  top: 60%;
-  right:  0px;
-  height: 200px;
-  transform: translateY(-50%);
-`;
 
 export default function Blog1() {
   const images = [

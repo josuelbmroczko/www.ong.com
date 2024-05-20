@@ -44,7 +44,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="/" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/5511931450860?text=proje+togera%C3%A7ao+resgate" target="_blank" rel="noopener noreferrer">
               <p>Whatsapp</p>
             </a>
           </li>
@@ -59,8 +59,8 @@ const Footer = () => {
             </a>
           </li>
           <li>
-          <a href="mailto:systemloquaz@hotmail.com">
-              <p>Email: Ong@hotmail.com</p>
+          <a href="mailto:geracaoresgate.ong@gmail.com">
+              <p>Email:geracaoresgate.ong@gmail.com</p>
             </a>
           </li>
         </ul>

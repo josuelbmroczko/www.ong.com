@@ -81,8 +81,8 @@ export const data = {
             whatsapp:'WhatsApp:',
             celular1:'(11)99309-3681',
             celular2:'(11) 93145-0860',
-            whatsappLink:'https://wa.me/5511993093681?text=Em+breve+entrarei+em+contato',
-            email:'systemloquaz@hotmail.com',
+            whatsappLink:'https://wa.me/5511931450860?text=proje+togera%C3%A7ao+resgate',
+            email:'geracaoresgate.ong@gmail.com',
 
         },
 

@@ -26,7 +26,12 @@ const StyleDiv = styled.div`
   }
 
   .logo {
+    position: relative;
     width: 120px;
+    background-color: white;
+ 
+  
+    top: 5px;
   }
 
   .menu-button {

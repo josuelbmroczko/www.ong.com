@@ -6,7 +6,7 @@ export default function Whatsapp (){
     return(
         <StyleWhatsap>
 
-        <a href={data.footer.contatos.whatsappLink} rel="noopener noreferrer" > <img src={whatsapp} alt="" /></a>
+        <a href={data.footer.contatos.whatsappLink} target="black" rel="noopener noreferrer" > <img src={whatsapp} alt="" /></a>
          
         </StyleWhatsap>
     )

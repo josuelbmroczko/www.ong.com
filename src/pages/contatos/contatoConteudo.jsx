@@ -27,7 +27,7 @@ export default function ContatoConteudo() {
       email: email
     };
 
-    emailjs.send("service_6n3k3e6", "template_zdv04fr", templateParams, "eb6YouwGZ_PxGm0rD")
+    emailjs.send("service_jpx4vkb", "template_zf53jmu", templateParams, "NICMzQUN83oDIe6bC")
       .then((response) => {
         console.log("Email enviado:", response.status, response.text);
         setSentSuccess(true);

@@ -91,7 +91,7 @@ export const data = {
         Sociais:{
             redesSociais:'Redes Sociais',
             linkedin:'LinkedIn',
-            linkedinLink:'https://www.linkedin.com/in/josuel-mroczko-677b36183/',
+            linkedinLink:'',
             facebook:' ',
             Instagram:' ',
             InstagramLink:' '

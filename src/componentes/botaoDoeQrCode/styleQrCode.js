@@ -6,7 +6,7 @@ export const EstiloQrCode = styled.section`
   justify-content: center;
   align-items: center;
   margin-bottom: 50px;
-  background-color: #B6E2F7;
+  background-color: ##0178FE;
  
   .containerBanner {
     position: relative;
@@ -40,7 +40,7 @@ export const EstiloQrCode = styled.section`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(210, 101, 0, 0.5);
+    background-color: #0178FE;
     padding: 40px;
     border-radius: 50px;
     color: white;
@@ -60,7 +60,7 @@ export const EstiloQrCode = styled.section`
 
   p {
     font-size: 1.4rem;
-    color: #555;
+    color: white;
     margin-bottom: 30px;
     line-height: 1.6;
   }
@@ -85,7 +85,7 @@ export const EstiloQrCode = styled.section`
 
   span {
     font-size: 1.4rem;
-    color: #777;
+    color: white;
   }
 
   .comoAjudar {
@@ -99,7 +99,7 @@ export const EstiloQrCode = styled.section`
 
   h3 {
     font-size: 2.2rem;
-    color: #333;
+    color: white;
     margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -112,13 +112,13 @@ export const EstiloQrCode = styled.section`
 
   li {
     font-size: 1.4rem;
-    color: #555;
+    color: white;
     margin-bottom: 15px;
     line-height: 1.6;
   }
 
   li strong {
-    color: #333;
+    color: white;
   }
 
   @media (max-width: 768px) {

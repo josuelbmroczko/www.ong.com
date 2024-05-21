@@ -52,6 +52,7 @@ useEffect(()=>{
     <StyledDiv>
    
       <div className="form-container">
+        
         <form className="form" onSubmit={sendEmail}>
           <h3>Enviar email</h3>
           <input

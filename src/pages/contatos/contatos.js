@@ -25,6 +25,9 @@ padding-bottom: 100px;
     align-items: center;
     margin-top: 20px;
     width: 100%;
+    h3{
+    color:blue;
+  }
   }
 
   .input,
@@ -85,6 +88,7 @@ padding-bottom: 100px;
     right: 20px;
     color: black;
   }
+
    
   }
 `;

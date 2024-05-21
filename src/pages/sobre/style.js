@@ -4,7 +4,7 @@ export const StyledDiv = styled.div`
   text-align: center;
   font-size: 18px;
  
-background-color: white;
+  background-color: #0178FE;
 padding: 100px;
 padding-top: 100px;
 padding-bottom: 120px;
@@ -23,22 +23,22 @@ padding-bottom: 120px;
   }
 
   h1 {
-    color: #333;
+    color:white;
     margin-bottom: 20px;
   }
   mark{
     background-color: transparent;
-    color: black;
+    color:white;
     font-weight: bold;
   }
   h2 {
-    color: #555;
+    color:white;
     margin-top: 30px;
     margin-bottom: 10px;
   }
 
   p {
-    color: #666;
+    color:white;
     margin-bottom: 20px;
   }
 
@@ -51,7 +51,7 @@ padding-bottom: 120px;
   }
 
   li {
-    color: #777;
+    color:white;
     margin-bottom: 10px;
   }
 

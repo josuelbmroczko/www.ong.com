@@ -12,7 +12,7 @@ export const StyleProjetos = styled.section`
  width: 80%;
  left: 10%;
         font-size: 36px;
-        color: #333;
+        color:  rgba(250,250,250 );
         margin-bottom: 40px;
         background-color: rgba(10,10,10,0.5);
         color: aliceblue;
@@ -22,7 +22,7 @@ export const StyleProjetos = styled.section`
 
     h3 {
         font-size: 24px;
-        color: #555;
+        color:  rgba(250,250,250 );
         margin-bottom: 10px;
     }
 
@@ -30,7 +30,7 @@ export const StyleProjetos = styled.section`
         position: relative;
         left: 10%;
         font-size: 18px;
-        color: #666;
+        color:  rgba(250,250,250 );
         width: 80%;
      
     }

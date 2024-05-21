@@ -52,11 +52,11 @@ export const FooterContainer = styled.footer`
 export const Direitos = styled.div`
 
   width: 80%;
-  
+  color: rgb(250,250,250);
   position: relative;
   font-size: 14px;
 p{
-   background-color: aliceblue;
+   color: rgb(250,250,250);
   align-items: center;
    
 }

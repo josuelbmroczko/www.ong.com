@@ -13,14 +13,14 @@ export const Mapastyle = styled.section`
         margin-bottom: 30px;
         font-size: 2.5rem;
         text-align: center;
-        color: #333;
+        color: rgb(250,250,250);
     }
 
     p {
         font-size: 1.2rem;
         text-align: center;
-        color: #666;
-        margin-bottom: 40px;
+        color: rgb(250,250,250);       
+         margin-bottom: 40px;
         width: 80%;
        
     }

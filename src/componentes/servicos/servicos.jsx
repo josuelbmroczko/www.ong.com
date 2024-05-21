@@ -32,7 +32,7 @@ export default function Servicos() {
             case 1:
                 return aberto1 ? "450px" : "200px"; // altura quando aberto ou fechado
             case 2:
-                return aberto2 ? "520px" : "200px"; // altura quando aberto ou fechado
+                return aberto2 ? "550px" : "200px"; // altura quando aberto ou fechado
             case 3:
                 return aberto3 ? "450px" : "200px"; // altura quando aberto ou fechado
             default:

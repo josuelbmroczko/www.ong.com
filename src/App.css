@@ -4,9 +4,12 @@ body, html {
  /* background: linear-gradient(45deg, #ffcc99, #ffffcc, #99ff99, #cc99ff, #99ccff, #ff99cc);
   background-size: 300%;
   animation: changeColor 10s linear infinite alternate;*/
-  background-color: #B6E2F7;
+  background-color: #0178FE;
   
   
+}
+*{
+  color: white;
 }
   
 @keyframes changeColor {

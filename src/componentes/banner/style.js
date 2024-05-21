@@ -6,7 +6,7 @@ const Slider = styled.div`
  
   .text-container {
     position: absolute;
-    top: 120px;
+    top: 150px;
 
  
     z-index: 2;
@@ -66,7 +66,7 @@ const Slider = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.2); /* Cor preta semi-transparente */
+    background-color: rgba(0, 0, 0, 0.1); /* Cor preta semi-transparente */
     z-index: 0; /* Ajuste para garantir que a camada preta fique abaixo da imagem */
   }
 

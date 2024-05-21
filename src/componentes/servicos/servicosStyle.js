@@ -47,7 +47,7 @@ export const ServicosStyle = styled.div`
     cursor: pointer;
     margin-bottom: 20px;
     color: #ddd;
-    background-color: #2D2E7C;
+    background-color:#007AFE;
     position: relative;
 
   }
@@ -63,7 +63,7 @@ export const ServicosStyle = styled.div`
     padding:   10px;
     border-radius: 100px 0 0 0px;
     border: none;
-    background-color:#007AFE ;
+    background-color:#99CCFF ;
     color: #fff;
     cursor: pointer;
     position: absolute;

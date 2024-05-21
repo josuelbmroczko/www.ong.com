@@ -41,12 +41,14 @@ export const StyleProdutos = styled.div`
     display: flex;
     left: 20%;
     transform: translate(-10%);
-     text-align: center;
+      text-align: center;
     width: 200px;
     display: block;
     font-weight: bold;
   }
   a{
     color: black;
+    text-decoration: none;
+
   }
 `;

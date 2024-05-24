@@ -15,7 +15,8 @@ import Projetos from './componentes/projtos/projetos.jsx';
 import logo from './imagem/logo1.png';  // Verifique se o caminho está correto
 
 function Loading() {
-  return (
+  return ( 
+    
     <div className="loading">
       <img src={logo} alt="Logo" /> {/* Adicione a propriedade alt para acessibilidade */}
       <h1>Projeto Geração Resgate</h1> {/* Adicionando o texto de boas-vindas */}

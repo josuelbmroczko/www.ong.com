@@ -3,6 +3,7 @@
 import capa1 from '../imagem/pascoa.jpg'
 import capa2 from '../componentes/blog/imagensblog2/CasaNinho3.jpeg'
 import capa3 from '../componentes/blog/imagensBlog3/blog1.png'
+import capa4 from '../componentes/blog/imagensBlog4/blog40.png'
 
  
 const produtosData = [
@@ -28,6 +29,14 @@ const produtosData = [
     
     link: "/nova3",
     texto:'Indivíduos colaboram, ideias florescem e ações transformadoras moldam um futuro mais promissor para todos.'
+  },
+  {
+    id:4,
+    nome: 'Natal',
+    imagem: capa4,
+    
+    link: "/nova4",
+    texto:'Natal comunitario'
   },
  
 ];

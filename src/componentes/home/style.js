@@ -64,7 +64,7 @@ const StyleDiv = styled.div`
 
   .nav-list a {
     text-decoration: none;
-    color: ${Cores.preto};
+     
     background-color: #007AFE;
     text-align: center;
     padding: 5px;

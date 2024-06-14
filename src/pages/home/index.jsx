@@ -15,6 +15,7 @@ import Valores from '../../componentes/valores/valores.jsx';
 import Whatsapp from '../../componentes/whatsapp/whatsapp.jsx';
 import ContatoEMapa from './../../adicionarProdutos/contatoemapa/contatoemapa';
 import NossosParceiros from '../../componentes/nossosparceiros/nossosParceiros.jsx';
+import Ofertas from '../../componentes/ofertas/index.jsx';
 
 function Homeeapp() {
   
@@ -31,7 +32,9 @@ function Homeeapp() {
       <Banner banner1={banner1} banner2={banner2} />
       
       <Servicos/>
+         <Ofertas/>
       <Valores/>
+   
       <Produtos produtosData={produtosData} />
       <Whatsapp/>
       <ContatoEMapa/>

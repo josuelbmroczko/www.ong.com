@@ -10,12 +10,11 @@ import imagem7 from '../imagensBlog4/blog7.png';
 import imagem8 from '../imagensBlog4/blog8.png';
 import imagem9 from '../imagensBlog4/blog9.png';
 import imagem10 from '../imagensBlog4/blog10.png';
-import imagem11 from '../imagensBlog4/blog11.png';
+ 
 import imagem12 from '../imagensBlog4/blog12.png';
 import imagem13 from '../imagensBlog4/blog13.png';
 import imagem14 from '../imagensBlog4/blog14.png';
-import imagem15 from '../imagensBlog4/blog15.png';
-import imagem16 from '../imagensBlog4/blog16.png';
+ import imagem16 from '../imagensBlog4/blog16.png';
 import imagem17 from '../imagensBlog4/blog17.png';
 import imagem18 from '../imagensBlog4/blog18.png';
 import imagem19 from '../imagensBlog4/blog19.png';
@@ -63,7 +62,7 @@ import Footer from '../../footer/footer';
 export default function Blog4() {
   const images = [
     imagem1, imagem2, imagem3, imagem4, imagem5, imagem6, imagem7, imagem8, imagem9, imagem10, 
-imagem11, imagem12, imagem13, imagem14, imagem15, imagem16, imagem17, imagem18, imagem19, imagem20, 
+ imagem12, imagem13, imagem14,  imagem16, imagem17, imagem18, imagem19, imagem20, 
 imagem21, imagem22, imagem23, imagem24, imagem25, imagem26, imagem27, imagem28, imagem29, imagem30, 
 imagem31, imagem32, imagem33, imagem34, imagem35, imagem36, imagem37, imagem38, imagem39, imagem40, 
 imagem41, imagem42, imagem43, imagem44, imagem45, imagem46, imagem47, imagem48, imagem49, imagem50

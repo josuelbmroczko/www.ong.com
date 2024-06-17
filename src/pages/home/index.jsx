@@ -32,7 +32,7 @@ function Homeeapp() {
       <Banner banner1={banner1} banner2={banner2} />
       
       <Servicos/>
-         <Ofertas/>
+  
       <Valores/>
    
       <Produtos produtosData={produtosData} />

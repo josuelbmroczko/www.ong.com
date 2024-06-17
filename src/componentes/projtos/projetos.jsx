@@ -3,6 +3,7 @@ import Home from "../home";
 import { StyleProjetos } from "./projetosStyle";
 import { styled } from 'styled-components';
 import cursoProficionalizante from '../../imagem/cursoProficionalizante.jpg'
+import Ofertas from "../ofertas";
 
 const StyledText = styled.div`
     font-size: 18px;
@@ -20,11 +21,8 @@ export default function Projetos(){
                 <h2>Projetos</h2>
                 <StyledText>
                     <h3>Curso de Capacitação Profissional para Jovens e Adultos:</h3>
-                    <p>
-                        Este projeto é direcionado para pessoas jovens e adultas da região de Itaquera.
-                        O objetivo principal é oferecer um curso de capacitação profissional, ou seja, uma oportunidade para essas pessoas adquirirem habilidades e conhecimentos específicos para o mercado de trabalho.
-                        A ideia é preparar os participantes para terem mais oportunidades de emprego ou até mesmo melhorarem suas posições profissionais.
-                    </p>
+                    <Ofertas/>
+                    
                 </StyledText>
 
                 <StyledText>

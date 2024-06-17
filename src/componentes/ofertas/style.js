@@ -11,21 +11,28 @@ const bounce = keyframes`
 
 
 export const Style = styled.div`
+ 
 text-align: center;
+ display: flex;
+ flex-direction: column;
   .image-container {
     position: relative;
     display: inline-block;
-  }
+    
 
+  }
+ 
+ 
   .image-container img {
-    width: 100%;
+    max-width: 600px;
+     width: 100%;
     height: auto;
   }
 
   .overlay-text {
-    position: absolute;
+    position: relative;
     top: 80%;
-    left: 30%;
+    left: 0%;
     transform: translate(-50%, -50%);
     color: white;
     background-color: rgba(0, 0, 2000  );

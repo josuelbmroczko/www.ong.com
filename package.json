@@ -8,6 +8,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
+    "react-lazyload": "^3.2.1",
     "react-modal": "^3.16.1",
     "react-router-dom": "^6.22.0",
     "react-scripts": "5.0.1",
@@ -60,6 +61,11 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "imagemin": "^9.0.0",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-svgo": "^11.0.1",
+    "imagemin-webp": "^8.0.0",
     "matchmedia-polyfill": "^0.3.2",
     "prettier": "^3.2.4"
   }

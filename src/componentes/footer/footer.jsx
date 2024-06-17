@@ -29,7 +29,7 @@ const Footer = () => {
            
           </li>
           <li>
-            <p>Sede: Av. Das Alamandas nº 190 </p>
+            <p>Sede: Rua Guaraxain, 413 Cid. A.E Carvalho.</p>
             <p>Cep: 08225-310</p>
           </li>
         </ul>

@@ -1,26 +1,26 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styled from 'styled-components';
-import imagem1 from '../imagensBlog/imagem1.png';
-import imagem2 from '../imagensBlog/imagem2.png';
-import imagem3 from '../imagensBlog/imagem11.png';
-import imagem4 from '../imagensBlog/imagem4.png';
-import imagem5 from '../imagensBlog/imagem5.png';
-import imagem6 from '../imagensBlog/imagem6.png';
-import imagem7 from '../imagensBlog/imagem7.png';
+import imagem1 from '../imagensBlog/imagem1.jpg';
+import imagem2 from '../imagensBlog/imagem2.jpg';
+import imagem3 from '../imagensBlog/imagem11.jpg';
+import imagem4 from '../imagensBlog/imagem4.jpg';
+import imagem5 from '../imagensBlog/imagem5.jpg';
+import imagem6 from '../imagensBlog/imagem6.jpg';
+import imagem7 from '../imagensBlog/imagem7.jpg';
 
-import imagem10 from '../imagensBlog/imagem10.png';
-import imagem11 from '../imagensBlog/imagem11.png';
-import imagem12 from '../imagensBlog/imagem12.png';
+import imagem10 from '../imagensBlog/imagem10.jpg';
+import imagem11 from '../imagensBlog/imagem11.jpg';
+import imagem12 from '../imagensBlog/imagem12.jpg';
  
 
  
-import imagem16 from '../imagensBlog/imagem16.png';
-import imagem17 from '../imagensBlog/imagem17.png';
+import imagem16 from '../imagensBlog/imagem16.jpg';
+import imagem17 from '../imagensBlog/imagem17.jpg';
 
-import imagem22 from '../imagensBlog/imagem22.png';
-import imagem23 from '../imagensBlog/imagem23.png';
-import imagem25 from '../imagensBlog/imagem25.png';
-import imagem26 from '../imagensBlog/imagem26.png';
+import imagem22 from '../imagensBlog/imagem22.jpg';
+import imagem23 from '../imagensBlog/imagem23.jpg';
+import imagem25 from '../imagensBlog/imagem25.jpg';
+import imagem26 from '../imagensBlog/imagem26.jpg';
 
 import { BlogContainer, CarouselContainer, Container, Image, NextButton, PrevButton } from '../styles';
 import Home from '../../home';

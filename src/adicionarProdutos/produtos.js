@@ -2,8 +2,8 @@
  
 import capa1 from '../imagem/pascoa.jpg'
 import capa2 from '../componentes/blog/imagensblog2/CasaNinho3.jpeg'
-import capa3 from '../componentes/blog/imagensBlog3/blog1.png'
-import capa4 from '../componentes/blog/imagensBlog4/blog40.png'
+import capa3 from '../componentes/blog/imagensBlog3/blog1.jpg'
+import capa4 from '../componentes/blog/imagensBlog4/blog40.jpg'
 
  
 const produtosData = [

@@ -17,7 +17,7 @@ padding-bottom: 100px;
 
 .carousel {
   display: flex;
-  transition: transform 2.5s ease;
+  transition: transform  2.5s ease;
 }
 
 .carousel img {

@@ -52,7 +52,7 @@ export default function Home() {
         </div>
         <ul className="nav-list">
           <li>
-            <Link to="/" onClick={handleCloseModal}>Home</Link>
+            <Link to="/" onClick={handleCloseModal}>Inicio</Link>
           </li>
           <li>
             <Link to="/contato" onClick={handleCloseModal}>Contato</Link>

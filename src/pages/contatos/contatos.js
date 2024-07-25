@@ -25,9 +25,9 @@ padding-bottom: 100px;
     align-items: center;
     margin-top: 20px;
     width: 100%;
-    h3{
-    color:blue;
-  }
+    .custom-h3 {
+      color: black; /* Cor específica para este h3 */
+    }
   }
 
   .input,
@@ -89,6 +89,6 @@ padding-bottom: 100px;
     color: black;
   }
 
-   
   }
+  
 `;

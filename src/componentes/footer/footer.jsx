@@ -44,7 +44,7 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="https://wa.me/5511931450860?text=proje+togera%C3%A7ao+resgate" target="_blank" rel="noopener noreferrer">
+            <a href="https://api.whatsapp.com/send?phone=5511931450860&text=Ol%C3%A1%20vim%20pelo%20Site%20da%20Ong." target="_blank" rel="noopener noreferrer">
               <p>Whatsapp</p>
             </a>
           </li>

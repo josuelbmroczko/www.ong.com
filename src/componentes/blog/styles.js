@@ -1,112 +1,60 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-padding-top: 100px;
-padding-bottom: 100px;
+ export const BlogContainer = styled.div`
+ margin-top: 100px;
  
-.carousel-container {
-  width: 100%;
-  max-width: 800px;
-  overflow: hidden;
-  margin: 0 auto;
-}
+  text-align: center;
+  padding: 2rem;
 
-.carousel {
-  display: flex;
-  transition: transform  2.5s ease;
-}
-
-.carousel img {
-  flex: 0 0 auto;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-}
-
-.controls {
-  margin-top: 10px;
-}
-
-.arrow {
-  cursor: pointer;
-  user-select: none;
-}
-
-@media (max-width: 768px) {
-  .carousel img {
-    display: block;
+  .slick-dots li button:before {
+    display: none;
   }
-
-  .controls {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-`;
-
-export const BlogContainer = styled(Container)`
-  position: relative;
 `;
 
 export const CarouselContainer = styled.div`
-  width: 80%;
-  overflow-x: auto;
+  position: relative;
+  margin: 2rem auto;
+  max-width: 80%;
+`;
+
+export const ImageWrapper = styled.div`
+  padding: 0 5px; /* Espaço de 5px em cada lado para totalizar 10px entre imagens */
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px; /* Altura padrão para todas as imagens */
   display: flex;
-  scroll-snap-type: x mandatory;
-  margin: 100px;
- 
-  &::-webkit-scrollbar {
-    width: 100%; /* Largura do scrollbar */
-    height: 8px;
-  }
-  &::-webkit-scrollbar-thumb {
-    background-color: #4a56c0; /* Cor do scrollbar */
-  }
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Image = styled.img`
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-  scroll-snap-align: start;
-  margin-right: 10px;
-  &:hover {
-    
-  }
-  
-  
-  
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem cubra todo o espaço sem distorção */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
-export const Button = styled.button`
-  background-color: rgba(74, 86, 192, 0.5)
-;
+export const PrevButton = styled.button`
+  position: absolute;
+  top: 50%;
+  left: -1.5rem;
+  transform: translateY(-50%);
+  background: none;
   border: none;
-  padding: 10px;
-  color: aliceblue;
+  font-size: 2rem;
   cursor: pointer;
-  &:hover {
- 
-  }
+  z-index: 1;
 `;
 
-export const PrevButton = styled(Button)`
+export const NextButton = styled.button`
   position: absolute;
-  top: 60%;
-  left: 10px;
-  height: 200px;
+  top: 50%;
+  right: -1.5rem;
   transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
 `;
-
-export const NextButton = styled(Button)`
-  position: absolute;
-  top: 60%;
-  right:  10px;
-  height: 200px;
-  transform: translateY(-50%);
-`;
-

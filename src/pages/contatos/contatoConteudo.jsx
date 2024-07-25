@@ -54,8 +54,8 @@ useEffect(()=>{
       <div className="form-container">
         
         <form className="form" onSubmit={sendEmail}>
-          <h3>Enviar email</h3>
-          <input
+        <h3 className="custom-h3">Enviar email</h3>       
+           <input
             className="input"
             type="text"
             placeholder="Seu nome"

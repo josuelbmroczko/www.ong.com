@@ -1,7 +1,7 @@
 import React from "react";
 import Rodape from "../footer/footer";
 import Inicio from "../home";
-import { EstiloQrCode, CopyButton } from "./styleQrCode"; // Certifique-se de exportar o styled-component CopyButton do arquivo de estilos
+import { EstiloQrCode, CopyButton } from "./styleQrCode"; // Importa os styled-components
 import { data } from './../../adicionarProdutos/dataTextos';
 
 export default function DoacaoQrCode() {
@@ -23,7 +23,7 @@ export default function DoacaoQrCode() {
 
       <EstiloQrCode>
         <div className="containerBanner">
-          <img src={data.bloco4.banner} alt="" />
+          <img src={data.bloco4.banner} alt="Banner" />
           <div className="sobreposicao"></div>
           <h2>Seja parte da mudança!</h2>
         </div>
@@ -31,9 +31,11 @@ export default function DoacaoQrCode() {
         <div className="secaoDoacao">
           <p>Ajude-nos a transformar vidas. Sua contribuição faz toda a diferença.</p>
           <div className="containerQrCode">
-            <img src={data.qrcode.imagemqrcode} alt="qrcode" />
-            <CopyButton onClick={copyToClipboard}> Click para copiar 00020126360014BR.GOV.BCB.PIX0114102992360001245204000053039865802BR5901N6001C62110507SiteOng6304E7B7</CopyButton>
-            <span>Escanee o QR Code ou copie o código e doe qualquer valor!</span>
+            <img src={data.qrcode.imagemqrcode} alt="QR Code" />
+            <CopyButton onClick={copyToClipboard}>
+              Clique para copiar o código
+            </CopyButton>
+            <span>Escaneie o QR Code ou copie o código e doe qualquer valor!</span>
           </div>
         </div>
 

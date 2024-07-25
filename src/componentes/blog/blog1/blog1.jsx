@@ -9,7 +9,7 @@ import imagem2 from '../imagensblog2/CasaNinho2.jpeg';
 import imagem3 from '../imagensblog2/CasaNinho3.jpeg';
 import imagem4 from '../imagensblog2/CasaNinho4.jpeg';
 import imagem5 from '../imagensblog2/CasaNinho5.jpeg';
-import imagem6 from '../imagensblog2/Chuchucão&Bila-Bilu.jpeg';
+import imagem6 from '../imagensblog2/CasaNinho6.jpeg';
 
 import Home from '../../home';
 import Footer from '../../footer/footer';

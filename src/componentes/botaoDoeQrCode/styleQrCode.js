@@ -13,6 +13,8 @@ export const EstiloQrCode = styled.section`
     overflow: hidden;
     width: 100%;
     height: 80vh;
+    padding: 0 20px; /* Adiciona padding para evitar que o conteúdo fique muito próximo das bordas */
+    box-sizing: border-box; /* Inclui padding na largura e altura do elemento */
   }
 
   .containerBanner img {
@@ -41,16 +43,18 @@ export const EstiloQrCode = styled.section`
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #0178FE;
-    padding: 40px;
+    padding: 20px 30px; /* Reduzido o padding para ajustar em telas menores */
     border-radius: 50px;
     color: white;
-    z-index: 2; /* Para garantir que o texto fique acima da película */
+    z-index: 2;
     text-align: center;
+    font-size: 2rem; /* Ajustado para melhor responsividade */
   }
 
   .secaoDoacao {
     margin-top: 30px;
     max-width: 800px;
+    width: 90%; /* Ajusta o tamanho em relação à tela */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -66,6 +70,7 @@ export const EstiloQrCode = styled.section`
   }
 
   .containerQrCode {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -91,8 +96,9 @@ export const EstiloQrCode = styled.section`
   .comoAjudar {
     text-align: left;
     max-width: 800px;
-    margin: 20px;
- text-align: center;
+    width: 90%; /* Ajusta o tamanho em relação à tela */
+    margin: 20px auto; /* Centraliza a seção */
+    text-align: center; /* Corrige a centralização do texto */
     z-index: 3;
     position: relative;
   }
@@ -126,8 +132,8 @@ export const EstiloQrCode = styled.section`
       width: 250px;
     }
 
-    h2 {
-      font-size: 2.4rem;
+    .containerBanner h2 {
+      font-size: 1.8rem;
     }
 
     p {
@@ -148,8 +154,8 @@ export const EstiloQrCode = styled.section`
       width: 200px;
     }
 
-    h2 {
-      font-size: 2rem;
+    .containerBanner h2 {
+      font-size: 1.6rem;
     }
 
     p {
@@ -166,10 +172,9 @@ export const EstiloQrCode = styled.section`
   }
 `;
 
- 
 export const CopyButton = styled.button`
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #0056b3;
   color: #ffffff;
   border: none;
   border-radius: 5px;
@@ -178,6 +183,6 @@ export const CopyButton = styled.button`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: #0056b3;
+    background-color: aqua;
   }
 `;

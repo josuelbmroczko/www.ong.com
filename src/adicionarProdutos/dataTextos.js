@@ -1,7 +1,7 @@
-import bannerDoacoes from '../imagem/doacoes.jpg'
-import doacao1 from '../imagem/doacao1.jpg'
-import doacao2 from '../imagem/doacao2.jpg'
-import doacao3 from '../imagem/doacao3.jpg'
+import bannerDoacoes from '../imagem/doacoes.png'
+import doacao1 from '../imagem/doacao1.png'
+import doacao2 from '../imagem/doacao2.png'
+import doacao3 from '../imagem/doacao3.png'
 import qrcode from '../imagem/qrcode-pix.png'
 
 

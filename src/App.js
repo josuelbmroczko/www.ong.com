@@ -13,6 +13,7 @@ import SobreConteudo from './pages/sobre/sobreConteudo.jsx';
 import ContatoConteudo from './pages/contatos/contatoConteudo.jsx';
 import Projetos from './componentes/projtos/projetos.jsx';
 import logo from './imagem/logo1.png';  // Verifique se o caminho está correto
+import Cursos from './componentes/cursos/cursos.jsx';
 
 function Loading() {
   return ( 
@@ -57,6 +58,7 @@ function App() {
           <Route path="/nova3" element={<Blog3 />} />
           <Route path="/nova4" element={<Blog4 />} />
           <Route path="/projetos" element={<Projetos />} />
+          <Route path='/cursos' element={<Cursos/>}/>
         </Routes>
       </Router>
     </ImageProvider>

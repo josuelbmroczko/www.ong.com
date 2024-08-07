@@ -92,8 +92,9 @@ const StyleDiv = styled.div`
 
   .close-button {
     position: absolute;
-    left: 350px;
-    top: 30px;
+    display: flex;
+    right:5%;
+    top: 10px;
     color: white;
     background-color: #007AFE;
   }
@@ -117,7 +118,7 @@ const StyleDiv = styled.div`
     background-color: blue;
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 800px) {
     .nav-list {
       display: none;
     }
@@ -127,7 +128,7 @@ const StyleDiv = styled.div`
     }
   }
 
-  @media screen and (min-width: 601px) {
+  @media screen and (min-width: 800px) {
     .modal {
       display: none;
     }

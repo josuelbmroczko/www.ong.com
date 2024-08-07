@@ -66,6 +66,9 @@ export default function Home() {
           <li>
             <Link to="/sobre" onClick={handleCloseModal}>Sobre</Link>
           </li>
+          <li>
+            <Link to="/cursos" onClick={handleCloseModal}>Cursos</Link>
+          </li>
         </ul>
         {isModalOpen && (
           <div
@@ -98,6 +101,9 @@ export default function Home() {
               </li>
               <li>
                 <Link to="/sobre" onClick={handleCloseModal}>Sobre</Link>
+              </li>
+              <li>
+                <Link to="/cursos" onClick={handleCloseModal}>Cursos</Link>
               </li>
             </ul>
           </div>

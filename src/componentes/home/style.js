@@ -5,7 +5,7 @@ const StyleDiv = styled.div`
   position: fixed;
   z-index: 999;
   background-color: ${Cores.brancoTransparente};
-  width: 100%;
+  width: 99.9%;
   left: 0px;
   top: 0;
   display: flex;

@@ -21,6 +21,7 @@ import foto9 from './foto9.jpeg';
 import foto10 from './foto10.jpeg';
 import foto11 from './foto11.jpeg';
 import cursoProficionalizante from './foto1.jpg';
+import foto12 from './foto12.jpeg'
 
 // Estilo adicional para o Swiper
 const SwiperWrapper = styled.div`
@@ -33,7 +34,6 @@ const SwiperWrapper = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
-        /* Remove padding horizontal para que as imagens fiquem coladas nas bordas */
         padding: 0;
         box-sizing: border-box;
     }
@@ -43,6 +43,7 @@ const SwiperWrapper = styled.div`
         object-fit: cover;
         object-position: center;
     }
+
     .swiper-button-next,
     .swiper-button-prev {
         color: #f0f0f0;
@@ -90,6 +91,31 @@ const StyledText = styled.div`
     }
 `;
 
+// Novo bloco de texto estilizado
+const NewTextBlock = styled.div`
+    font-size: 16px;
+    line-height: 1.6;
+    color: #f5f5f5;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(31, 81, 104, 0.541);
+    border-radius: 10px;
+
+    h3 {
+        font-size: 24px;
+        color: #99CCFF;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    ul {
+        margin-left: 20px;
+        li {
+            margin-bottom: 10px;
+        }
+    }
+`;
+
 export default function Cursos() {
     return (
         <>
@@ -99,10 +125,10 @@ export default function Cursos() {
                 <h2>Cursos</h2>
                 <SwiperWrapper>
                     <h1>Promotor de Vendas</h1>
-                    <p>Uma escolha certa para você</p>
+                    <p className='turma'> Turma da noite</p>
                     <Swiper
-                        spaceBetween={10} // Define o espaço entre os slides como 10px
-                        centeredSlides={false} // Define o slide centralizado como false
+                        spaceBetween={10}
+                        centeredSlides={false}
                         autoplay={{
                             delay: 3000,
                             disableOnInteraction: false,
@@ -141,6 +167,8 @@ export default function Cursos() {
                         <SwiperSlide><img src={foto11} alt="Curso 11" /></SwiperSlide>
                     </Swiper>
                 </SwiperWrapper>
+                <p className='turma'> Turma da tarde</p>
+                        <img className='fotoTarde' src={foto12} alt="" />
                 <StyledText>
                     <h1>Promotor de Vendas</h1>
                     <p>Você quer se destacar no mercado de trabalho e conquistar grandes oportunidades na área de vendas? Nosso curso de Promotor de Vendas é uma escolha certa para você.</p>
@@ -163,6 +191,21 @@ export default function Cursos() {
                     </ul>
                     <p>Garanta já sua vaga e transforme sua carreira!</p>
                 </StyledText>
+                <NewTextBlock>
+                    <h3>O que faz um Promotor de Vendas</h3>
+                    <p>Um Promotor de Vendas é responsável por promover produtos e serviços de uma empresa, visando aumentar as vendas e melhorar a visibilidade da marca. As principais funções desse profissional incluem:</p>
+                    <ul>
+                        <li><strong>Apresentação de Produtos:</strong> Demonstrar os produtos para clientes e consumidores, destacando suas características e benefícios.</li>
+                        <li><strong>Estratégias de Venda:</strong> Implementar estratégias e campanhas de vendas para atingir metas e objetivos estabelecidos pela empresa.</li>
+                        <li><strong>Relacionamento com Clientes:</strong> Estabelecer e manter um bom relacionamento com clientes, tirando dúvidas e oferecendo suporte para melhorar a experiência de compra.</li>
+                        <li><strong>Promoções e Ofertas:</strong> Organizar e executar ações promocionais e ofertas especiais para estimular as vendas e atrair novos clientes.</li>
+                        <li><strong>Treinamento de Equipe:</strong> Orientar e treinar vendedores e equipe de loja sobre os produtos e técnicas de venda.</li>
+                        <li><strong>Monitoramento de Vendas:</strong> Acompanhar e analisar o desempenho das vendas, coletar feedback dos clientes e ajustar estratégias conforme necessário.</li>
+                        <li><strong>Organização de Material de Ponto de Venda:</strong> Garantir que o material promocional e os displays estejam bem posicionados e atualizados no ponto de venda.</li>
+                        <li><strong>Relatórios e Análises:</strong> Elaborar relatórios sobre as atividades realizadas, o desempenho das vendas e o impacto das ações promocionais.</li>
+                    </ul>
+                    <p>O papel do Promotor de Vendas é crucial para aumentar a visibilidade dos produtos e estimular as vendas, além de criar uma experiência positiva para o cliente.</p>
+                </NewTextBlock>
             </StyleProjetos>
             <Footer />
         </>

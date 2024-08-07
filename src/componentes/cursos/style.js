@@ -17,6 +17,12 @@ export const StyleProjetos = styled.section`
         padding: 10px;
         border-radius: 20px;
     }
+    .turma{
+        background-color: darkblue;
+        color: #99CCFF;
+        padding: 10px;
+        border-radius: 10px;
+    }
 
     h3 {
         font-size: 24px;
@@ -33,10 +39,16 @@ export const StyleProjetos = styled.section`
     }
 
     img {
+        min-width: 350px;
         width: 100%;
         height: 400px;
         object-fit: cover;
         object-position: top;
+    }
+    .fotoTarde{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
     }
 
     @media screen and (max-width: 600px) {
